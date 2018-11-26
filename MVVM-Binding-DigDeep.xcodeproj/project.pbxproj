@@ -14,6 +14,8 @@
 		48F52C7E21ABEEB300AE971A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F52C7C21ABEEB300AE971A /* LaunchScreen.storyboard */; };
 		48F52C8921ABEEB300AE971A /* MVVM_Binding_DigDeepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52C8821ABEEB300AE971A /* MVVM_Binding_DigDeepTests.swift */; };
 		48F52C9421ABEEB300AE971A /* MVVM_Binding_DigDeepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52C9321ABEEB300AE971A /* MVVM_Binding_DigDeepUITests.swift */; };
+		48F52CA321ABEFBE00AE971A /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52CA221ABEFBE00AE971A /* Thread.swift */; };
+		48F52CA521ABEFF400AE971A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52CA421ABEFF400AE971A /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		48F52C8F21ABEEB300AE971A /* MVVM-Binding-DigDeepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-Binding-DigDeepUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F52C9321ABEEB300AE971A /* MVVM_Binding_DigDeepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_Binding_DigDeepUITests.swift; sourceTree = "<group>"; };
 		48F52C9521ABEEB300AE971A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48F52CA221ABEFBE00AE971A /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		48F52CA421ABEFF400AE971A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		48F52C7221ABEEB100AE971A /* MVVM-Binding-DigDeep */ = {
 			isa = PBXGroup;
 			children = (
+				48F52CA121ABEFA900AE971A /* Model */,
 				48F52C7321ABEEB100AE971A /* AppDelegate.swift */,
 				48F52C7521ABEEB100AE971A /* ViewController.swift */,
 				48F52C7721ABEEB100AE971A /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				48F52C9521ABEEB300AE971A /* Info.plist */,
 			);
 			path = "MVVM-Binding-DigDeepUITests";
+			sourceTree = "<group>";
+		};
+		48F52CA121ABEFA900AE971A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48F52CA221ABEFBE00AE971A /* Thread.swift */,
+				48F52CA421ABEFF400AE971A /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				48F52C7621ABEEB100AE971A /* ViewController.swift in Sources */,
+				48F52CA321ABEFBE00AE971A /* Thread.swift in Sources */,
 				48F52C7421ABEEB100AE971A /* AppDelegate.swift in Sources */,
+				48F52CA521ABEFF400AE971A /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
