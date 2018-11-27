@@ -22,7 +22,7 @@ class ThreadView: UIView {
 	private func setupUI() {
 		nameLabel = UILabel()
 		nameLabel?.frame = CGRect.init(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height)
-		postsTableView = UITableView.init(frame: self.frame, style: .plain)
+		postsTableView = UITableView.init(frame: (self.frame), style: .plain)
 		addSubview(postsTableView!)
 	}
 	

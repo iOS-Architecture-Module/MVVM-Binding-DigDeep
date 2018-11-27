@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		48C34ECD21AD24FD000DDC3B /* ThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C34ECC21AD24FD000DDC3B /* ThreadView.swift */; };
 		48C34ECF21AD2509000DDC3B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C34ECE21AD2509000DDC3B /* PostCell.swift */; };
+		48C34ED721AD3633000DDC3B /* SwiftIconFont.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C34ED221AD360E000DDC3B /* SwiftIconFont.framework */; };
+		48C34ED821AD3633000DDC3B /* SwiftIconFont.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48C34ED221AD360E000DDC3B /* SwiftIconFont.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48F52C7421ABEEB100AE971A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52C7321ABEEB100AE971A /* AppDelegate.swift */; };
 		48F52C7621ABEEB100AE971A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52C7521ABEEB100AE971A /* ViewController.swift */; };
 		48F52C7921ABEEB100AE971A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F52C7721ABEEB100AE971A /* Main.storyboard */; };
@@ -37,9 +39,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		48C34ED921AD3633000DDC3B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				48C34ED821AD3633000DDC3B /* SwiftIconFont.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		48C34ECC21AD24FD000DDC3B /* ThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadView.swift; sourceTree = "<group>"; };
 		48C34ECE21AD2509000DDC3B /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		48C34ED221AD360E000DDC3B /* SwiftIconFont.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftIconFont.framework; sourceTree = "<group>"; };
 		48F52C7021ABEEB100AE971A /* MVVM-Binding-DigDeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Binding-DigDeep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F52C7321ABEEB100AE971A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F52C7521ABEEB100AE971A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48C34ED721AD3633000DDC3B /* SwiftIconFont.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,9 +109,18 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		48C34ED621AD3616000DDC3B /* CarthageFramework */ = {
+			isa = PBXGroup;
+			children = (
+				48C34ED221AD360E000DDC3B /* SwiftIconFont.framework */,
+			);
+			path = CarthageFramework;
+			sourceTree = "<group>";
+		};
 		48F52C6721ABEEB100AE971A = {
 			isa = PBXGroup;
 			children = (
+				48C34ED621AD3616000DDC3B /* CarthageFramework */,
 				48F52C7221ABEEB100AE971A /* MVVM-Binding-DigDeep */,
 				48F52C8721ABEEB300AE971A /* MVVM-Binding-DigDeepTests */,
 				48F52C9221ABEEB300AE971A /* MVVM-Binding-DigDeepUITests */,
@@ -163,6 +190,7 @@
 				48F52C6C21ABEEB100AE971A /* Sources */,
 				48F52C6D21ABEEB100AE971A /* Frameworks */,
 				48F52C6E21ABEEB100AE971A /* Resources */,
+				48C34ED921AD3633000DDC3B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -465,6 +493,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/CarthageFramework",
+				);
 				INFOPLIST_FILE = "MVVM-Binding-DigDeep/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -482,6 +515,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/CarthageFramework",
+				);
 				INFOPLIST_FILE = "MVVM-Binding-DigDeep/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
