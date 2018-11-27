@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+	
+	var thread: Thread?
+	var threadView: ThreadView?
 
 	override func viewDidLoad() {
 		super.viewDidLoad()

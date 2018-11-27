@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48C34ECD21AD24FD000DDC3B /* ThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C34ECC21AD24FD000DDC3B /* ThreadView.swift */; };
+		48C34ECF21AD2509000DDC3B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C34ECE21AD2509000DDC3B /* PostCell.swift */; };
 		48F52C7421ABEEB100AE971A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52C7321ABEEB100AE971A /* AppDelegate.swift */; };
 		48F52C7621ABEEB100AE971A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F52C7521ABEEB100AE971A /* ViewController.swift */; };
 		48F52C7921ABEEB100AE971A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F52C7721ABEEB100AE971A /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48C34ECC21AD24FD000DDC3B /* ThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadView.swift; sourceTree = "<group>"; };
+		48C34ECE21AD2509000DDC3B /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		48F52C7021ABEEB100AE971A /* MVVM-Binding-DigDeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Binding-DigDeep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F52C7321ABEEB100AE971A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48F52C7521ABEEB100AE971A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48C34ECB21AD24EA000DDC3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48C34ECC21AD24FD000DDC3B /* ThreadView.swift */,
+				48C34ECE21AD2509000DDC3B /* PostCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		48F52C6721ABEEB100AE971A = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +114,7 @@
 		48F52C7221ABEEB100AE971A /* MVVM-Binding-DigDeep */ = {
 			isa = PBXGroup;
 			children = (
+				48C34ECB21AD24EA000DDC3B /* View */,
 				48F52CA121ABEFA900AE971A /* Model */,
 				48F52C7321ABEEB100AE971A /* AppDelegate.swift */,
 				48F52C7521ABEEB100AE971A /* ViewController.swift */,
@@ -271,9 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				48F52C7621ABEEB100AE971A /* ViewController.swift in Sources */,
+				48C34ECD21AD24FD000DDC3B /* ThreadView.swift in Sources */,
 				48F52CA321ABEFBE00AE971A /* Thread.swift in Sources */,
 				48F52C7421ABEEB100AE971A /* AppDelegate.swift in Sources */,
 				48F52CA521ABEFF400AE971A /* Post.swift in Sources */,
+				48C34ECF21AD2509000DDC3B /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
